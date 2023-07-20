@@ -36,6 +36,30 @@ header nav ul li a {
     font-family: "gobold_thinregular";
 }
 
+header button {
+    display: none;
+}
+
+@media screen and (max-width:700px) {
+    /*.abrir-menu{
+        display: block;
+        margin-top: 25px;
+        margin-left: 20px;
+    }
+
+    header nav ul {
+        display: none;
+    }*/
+
+    header nav ul {
+        flex-direction: column;
+        text-align: left;
+        margin-top: 60px;
+    }
+
+}
+
+
 /* MAIN */
 
 /* HOME */
@@ -81,15 +105,6 @@ header nav ul li a {
     align-self: center;
     justify-self: center;
 }
-
-/*.frame {
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    margin-top: 80px;
-}*/
 
 .vermut {
     display: grid;
@@ -420,7 +435,7 @@ footer a img {
     
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:700px) {
     .home div h1 {
         display: none;
     }
