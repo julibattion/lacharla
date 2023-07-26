@@ -713,18 +713,6 @@ footer div a img {
     }
 }
 
-@media screen and (max-width:980px) {
-    .cocteles {
-        background-image: url(../img/fondo-4.jpg);
-    }
-}
-
-@media screen and (max-width:885px) {
-    .cocteles {
-        background-image: url(../img/fondo-5.jpg);
-    }
-}
-
 @media screen and (max-width:1024px) {
     .img-cocteles div img {
         height: 400px;
@@ -740,12 +728,25 @@ footer div a img {
     }
 }
 
+@media screen and (max-width:980px) {
+    .cocteles {
+        background-image: url(../img/fondo-4.jpg);
+    }
+}
+
 @media screen and (max-width:940px) {
     .img-cocteles h3 {
         width: 500px;
         align-self: center;
     }
 }
+
+@media screen and (max-width:885px) {
+    .cocteles {
+        background-image: url(../img/fondo-5.jpg);
+    }
+}
+
 
 @media screen and (max-width:860px) {
     .img-cocteles div img {
@@ -865,8 +866,6 @@ footer div a img {
     }
 }
 
-
-
 /* DONDE ENCONTRARNOS */
 
 @media screen and (max-width:1080px) {
@@ -877,6 +876,13 @@ footer div a img {
 }
 
 @media screen and (max-width:890px) {
+    .donde-encontrarnos .frames .direcciones .zapata {
+        margin-top: -60px;
+    }
+    .donde-encontrarnos .frames .direcciones .salmuera {
+        margin-top: -60px;
+    }
+
     .donde-encontrarnos .frames {
         flex-direction: column;
         text-align: center;
