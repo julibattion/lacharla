@@ -203,6 +203,7 @@ header .abrir-menu, .cerrar{
     align-self: center;
     font-size: 18px;
     color: white;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .botanicos div img {
@@ -272,6 +273,10 @@ header .abrir-menu, .cerrar{
     align-self: center;
 }
 
+.img-cocteles div ul h2 {
+    color: rgb(134, 76, 14);
+}
+
 .img-cocteles ul li {
     font-family: 'Montserrat', sans-serif;
     list-style: none;
@@ -284,13 +289,13 @@ header .abrir-menu, .cerrar{
     margin-top: 60px;
 }
 
-.img-cocteles div h2 {
+.img-cocteles div ul h2 {
     font-family: "gobold_thinregular";
     text-align: center;
     font-size: 25px;
 }
 
-.img-cocteles div li {
+.img-cocteles div ul li {
     font-size: 16px;
 }
 
@@ -1163,12 +1168,17 @@ footer div a img {
 }
 
 @media screen and (max-width:790px) {
+    .img-cocteles {
+        margin-top: -30px;
+    }
+
     .img-cocteles div {
         flex-direction: column;
     }
 
     .img-cocteles h3 {
         margin-bottom: 60px;
+        margin-top: 30px;
     }
 
     .img-cocteles .negroni {
@@ -1185,6 +1195,11 @@ footer div a img {
 
     .img-cocteles div ul {
         align-self: center;
+        padding: 30px;
+    }
+
+    .img-cocteles div ul h2 {
+        padding-bottom: 18px;
     }
 
     .img-cocteles div img {
