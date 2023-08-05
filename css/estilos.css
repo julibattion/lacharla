@@ -1,0 +1,900 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap");
+/*RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.titulo {
+  font-size: 28px;
+  font-family: "gobold_thinregular";
+  color: #864c0e;
+  margin-bottom: 8px; }
+
+/*CONTACTO: CLASES BOOTSTRAP */
+.inputs {
+  margin-top: 20px;
+  font-family: 'Montserrat', sans-serif; }
+  .inputs .input-group .name {
+    margin-right: 13px;
+    width: 280px; }
+  .inputs .input-group .email {
+    width: 280px; }
+  .inputs .subject {
+    margin-top: 10px; }
+  .inputs .message {
+    margin-top: 10px; }
+
+.button .btn {
+  border: 1px white solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65px;
+  height: 35px;
+  margin-top: 17px;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  border-radius: 0; }
+  .button .btn:hover {
+    background-color: #895313;
+    color: white; }
+
+/*HEADER */
+header {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0px;
+  z-index: 1; }
+  header .abrir-menu {
+    display: none;
+    height: 35px;
+    width: 35px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-family: "gobold_thinregular";
+    box-sizing: border-box;
+    border: rgba(0, 0, 0, 0.7);
+    font-size: 20px;
+    padding-bottom: 3px; }
+  header nav .cerrar {
+    display: none;
+    height: 35px;
+    width: 35px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    box-sizing: border-box;
+    border: rgba(0, 0, 0, 0.7);
+    font-size: 18px; }
+  header nav ul {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly; }
+    header nav ul li {
+      margin-top: 25px;
+      list-style: none; }
+      header nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        font-family: "gobold_thinregular"; }
+        header nav ul li a:hover {
+          color: #895313; }
+
+/* HOME */
+.home {
+  background-image: url(../img/portada.jpg);
+  height: 100vh;
+  background-repeat: no-repeat; }
+  .home div h1 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-size: 22px;
+    position: absolute;
+    bottom: 90px;
+    left: 50px; }
+    .home div h1 span {
+      margin-left: 130px; }
+
+.logo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 200px; }
+  .logo img {
+    height: 600px;
+    width: 600px;
+    border-top-right-radius: 100px; }
+  .logo p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: black;
+    text-align: center;
+    width: 550px;
+    align-self: center;
+    justify-self: center; }
+
+/* NOSOTROS */
+.nosotros {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #895313;
+  align-items: center; }
+  .nosotros div {
+    text-align: center;
+    align-self: center; }
+    .nosotros div .titulo {
+      color: black; }
+    .nosotros div .descripcion {
+      font-size: 18px;
+      font-weight: 400;
+      font-family: 'Montserrat', sans-serif;
+      text-align: center;
+      width: 500px;
+      color: black; }
+  .nosotros img {
+    height: 750px;
+    width: 650px;
+    border-top-left-radius: 70px;
+    margin-top: 170px;
+    margin-bottom: 170px; }
+
+.elaboracion {
+  margin-top: 200px; }
+  .elaboracion .titulo {
+    text-align: center;
+    color: #895313; }
+  .elaboracion div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 100px; }
+    .elaboracion div img {
+      height: 550px;
+      width: 550px; }
+    .elaboracion div p {
+      font-size: 19px;
+      font-weight: 400;
+      font-family: 'Montserrat', sans-serif;
+      text-align: center;
+      width: 400px; }
+
+.botanicos {
+  background-color: #5f1e18;
+  margin-top: 270px; }
+  .botanicos div {
+    display: flex;
+    margin-top: 0px;
+    justify-content: space-evenly;
+    padding: 50px; }
+    .botanicos div p {
+      width: 500px;
+      text-align: center;
+      align-self: center;
+      font-size: 18px;
+      color: white;
+      font-family: 'Montserrat', sans-serif; }
+    .botanicos div img {
+      height: 500px;
+      width: 500px; }
+
+.variedades {
+  margin-top: 200px; }
+  .variedades h2 {
+    font-size: 25px;
+    font-family: "gobold_thinregular";
+    text-align: center; }
+  .variedades div {
+    display: flex;
+    justify-content: space-around; }
+    .variedades div img {
+      height: 600px;
+      width: 600px;
+      margin-top: 100px; }
+
+/* RECETAS */
+.cocteles {
+  background-image: url(../img/fondo.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  display: flex; }
+
+.img-cocteles {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+  .img-cocteles h1 {
+    font-family: "gobold_thinregular";
+    color: #864c0e;
+    margin-top: 120px;
+    text-align: center;
+    font-size: 26px; }
+  .img-cocteles h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 20px; }
+  .img-cocteles div {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px; }
+    .img-cocteles div img {
+      height: 550px;
+      width: 550px;
+      margin-top: 60px; }
+    .img-cocteles div ul {
+      align-self: center; }
+      .img-cocteles div ul h3 {
+        color: #864c0e;
+        font-family: "gobold_thinregular";
+        text-align: center;
+        font-size: 25px; }
+      .img-cocteles div ul li {
+        font-family: 'Montserrat', sans-serif;
+        list-style: none;
+        width: 300px;
+        font-size: 16px; }
+
+/* DONDE ENCONTRARNOS */
+.donde-encontrarnos {
+  background-color: #5f1e18; }
+  .donde-encontrarnos h1 {
+    font-family: "gobold_thinregular";
+    color: white;
+    text-align: center;
+    padding-top: 160px;
+    font-size: 26px;
+    font-weight: 500; }
+  .donde-encontrarnos h2 {
+    font-family: "gobold_thinregular";
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: -40px;
+    color: white; }
+  .donde-encontrarnos .frames {
+    margin-top: 150px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-evenly; }
+    .donde-encontrarnos .frames .direcciones {
+      font-family: 'Montserrat', sans-serif;
+      color: white; }
+      .donde-encontrarnos .frames .direcciones h3 {
+        font-weight: 600;
+        font-size: 20px;
+        text-align: center; }
+      .donde-encontrarnos .frames .direcciones p {
+        font-size: 15px;
+        text-align: center;
+        color: white;
+        font-weight: 200; }
+      .donde-encontrarnos .frames .direcciones iframe {
+        height: 400px;
+        width: 500px;
+        margin-top: 13px; }
+
+/*CONTACTO */
+.contacto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 150px;
+  background-color: #5f1e18;
+  height: 500px;
+  margin-bottom: 50px; }
+  .contacto h1 {
+    font-family: "gobold_thinregular";
+    color: white;
+    font-size: 26px;
+    font-weight: 500; }
+  .contacto img {
+    height: 20px;
+    width: 20px; }
+  .contacto h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: white;
+    margin-top: 5px; }
+
+/*FOOTER */
+footer {
+  background-color: #895313;
+  height: 240px;
+  margin-top: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  footer h3 {
+    font-family: "gobold_thinregular";
+    text-align: center;
+    font-size: 18px;
+    color: black;
+    margin-top: 10px; }
+  footer div p {
+    font-family: "gobold_thinregular";
+    font-size: 12px;
+    color: black;
+    text-align: center;
+    margin-top: 16px; }
+  footer div a img {
+    height: 23px;
+    width: 23px;
+    margin-top: 8px;
+    margin-bottom: 5px; }
+  footer .copyright {
+    margin-bottom: -4px;
+    margin-top: 12px;
+    font-family: "gobold_thinregular";
+    font-size: 12px;
+    color: black; }
+
+/*MEDIA QUERIES*/
+/* HEADER */
+@media screen and (max-width: 700px) {
+  header {
+    position: absolute;
+    top: 0; }
+    header .abrir-menu {
+      display: block;
+      margin-top: 20px;
+      margin-left: 30px; }
+    header nav {
+      visibility: hidden; }
+      header nav .cerrar {
+        display: block;
+        margin-left: 30px;
+        margin-top: -35px; }
+      header nav ul {
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: left;
+        margin-top: 16px;
+        height: 508px;
+        background-color: rgba(0, 0, 0, 0.7);
+        position: relative;
+        top: 9px; }
+        header nav ul li a:hover {
+          color: #895313; } }
+
+@media screen and (max-width: 550px) {
+  header nav ul li a {
+    font-size: 16px; } }
+
+@media screen and (max-width: 400px) {
+  header nav ul li a {
+    font-size: 14px; } }
+
+/* HOME */
+@media (max-width: 1440px) and (min-width: 1360px) {
+  .home {
+    background-image: url(../img/portada-6.jpg); } }
+
+@media screen and (max-width: 990px) {
+  .home {
+    background-image: url(../img/portada-2.jpg); } }
+
+@media screen and (max-width: 770px) {
+  .home {
+    background-image: url(../img/portada-3.jpg); }
+    .home div h1 {
+      top: 150px;
+      left: 20px; }
+      .home div h1 span {
+        margin-left: 40px; } }
+
+@media screen and (max-width: 600px) {
+  .home {
+    background-image: url(../img/portada-5.jpg); }
+    .home div h1 {
+      display: none; } }
+
+@media screen and (max-width: 560px) {
+  .home {
+    background-image: url(../img/portada-7.jpg); } }
+
+@media screen and (max-width: 400px) {
+  .home {
+    background-image: url(../img/portada-8.jpg); } }
+
+@media screen and (max-width: 1200px) {
+  .logo p {
+    width: 400px; } }
+
+@media screen and (max-width: 1100px) {
+  .logo {
+    margin-bottom: -180px; }
+    .logo img {
+      height: 500px;
+      width: 500px; } }
+
+@media screen and (max-width: 936px) {
+  .logo {
+    margin-bottom: -180px; }
+    .logo p {
+      width: 300px;
+      font-size: 16px; } }
+
+@media screen and (max-width: 870px) {
+  .logo img {
+    height: 450px;
+    width: 450px; } }
+
+@media screen and (max-width: 786px) {
+  .logo img {
+    height: 400px;
+    width: 400px; }
+  .logo p {
+    width: 300px;
+    font-size: 14px; } }
+
+@media screen and (max-width: 720px) {
+  .logo img {
+    height: 350px;
+    width: 350px; }
+  .logo p {
+    width: 250px; } }
+
+@media screen and (max-width: 680px) {
+  .logo {
+    grid-template-columns: 1fr;
+    margin-top: 150px; }
+    .logo img {
+      height: 400px;
+      width: 400px;
+      justify-self: center;
+      border-radius: 25px;
+      margin-top: -20px; }
+    .logo p {
+      width: 350px;
+      margin-top: 40px;
+      font-size: 14px; } }
+
+@media screen and (max-width: 425px) {
+  .logo {
+    margin-bottom: -230px; }
+    .logo img {
+      height: 300px;
+      width: 300px;
+      margin-top: -20px; }
+    .logo p {
+      font-size: 13px;
+      width: 300px; } }
+
+@media screen and (max-width: 320px) {
+  .logo img {
+    height: 250px;
+    width: 250px;
+    margin-top: -40px; }
+  .logo p {
+    width: 250px; } }
+
+/* NOSOTROS */
+@media screen and (max-width: 1320px) {
+  .variedades div img {
+    height: 530px;
+    width: 530px; } }
+
+@media screen and (max-width: 1280px) {
+  .nosotros img {
+    height: 650px;
+    width: 550px; }
+  .nosotros div .titulo {
+    font-size: 20px; }
+  .nosotros div .descripcion {
+    font-size: 16px; }
+  .elaboracion .titulo {
+    margin-top: -30px; }
+  .elaboracion div img {
+    height: 500px;
+    width: 500px; }
+  .elaboracion div p {
+    font-size: 16px;
+    width: 380px; } }
+
+@media screen and (max-width: 1150px) {
+  .nosotros img {
+    height: 590px;
+    width: 490px; }
+  .nosotros div .titulo {
+    font-size: 19px; }
+  .nosotros div .descripcion {
+    font-size: 14px; }
+  .elaboracion div img {
+    height: 450px;
+    width: 450px; }
+  .elaboracion div p {
+    width: 350px; }
+  .variedades div img {
+    height: 500px;
+    width: 500px; } }
+
+@media screen and (max-width: 1090px) {
+  .nosotros {
+    flex-direction: column-reverse;
+    justify-content: center; }
+    .nosotros img {
+      border-top-left-radius: 0px;
+      margin-top: 130px;
+      align-self: center;
+      justify-self: center; }
+    .nosotros div {
+      margin-top: -110px;
+      margin-bottom: 70px; }
+      .nosotros div .titulo {
+        font-size: 22px; }
+      .nosotros div .descripcion {
+        width: 580px;
+        font-size: 15px; }
+  .elaboracion .titulo {
+    align-self: center; }
+  .variedades div {
+    flex-direction: column; }
+    .variedades div img {
+      align-self: center;
+      height: 550px;
+      width: 550px; } }
+
+@media screen and (max-width: 1000px) {
+  .botanicos div img {
+    height: 400px;
+    width: 400px; }
+  .botanicos div p {
+    font-size: 16px; } }
+
+@media screen and (max-width: 980px) {
+  .elaboracion .titulo {
+    font-size: 23px; }
+  .elaboracion div img {
+    height: 400px;
+    width: 400px; }
+  .elaboracion div p {
+    font-size: 14px; } }
+
+@media screen and (max-width: 930px) {
+  .botanicos div {
+    flex-direction: column; }
+    .botanicos div img {
+      align-self: center; }
+    .botanicos div p {
+      padding-top: 40px;
+      width: 450px; }
+  .botanicos .anis {
+    flex-direction: column-reverse;
+    padding-top: 100px; }
+  .botanicos .jengibre {
+    flex-direction: column-reverse;
+    margin-top: -10px; }
+  .botanicos .cardamomo {
+    margin-top: -10px; }
+  .botanicos .canela {
+    margin-top: -10px; }
+  .variedades h2 {
+    margin-top: -50px; } }
+
+@media screen and (max-width: 890px) {
+  .nosotros img {
+    height: 530px;
+    width: 430px; }
+  .nosotros div .descripcion {
+    font-size: 14px; }
+  .elaboracion div {
+    flex-direction: column; }
+    .elaboracion div img {
+      margin-top: -30px; }
+    .elaboracion div p {
+      margin-top: 50px;
+      width: 550px;
+      margin-bottom: -100px; } }
+
+@media screen and (max-width: 690px) {
+  .nosotros img {
+    height: 500px;
+    width: 400px; }
+  .nosotros div .descripcion {
+    font-size: 13px; }
+  .elaboracion div img {
+    height: 370px;
+    width: 370px; }
+  .elaboracion div p {
+    font-size: 13px;
+    width: 430px; }
+  .botanicos div img {
+    height: 350px;
+    width: 350px; }
+  .botanicos div p {
+    font-size: 14px;
+    width: 350px; }
+  .variedades h2 {
+    font-size: 18px; }
+  .variedades div img {
+    height: 480px;
+    width: 480px; } }
+
+@media screen and (max-width: 640px) {
+  .nosotros img {
+    height: 400px;
+    width: 320px; }
+  .nosotros div .titulo {
+    font-size: 18px; }
+  .nosotros div .descripcion {
+    font-size: 13px;
+    width: 450px; }
+  .elaboracion .titulo {
+    margin-top: -100px; }
+  .variedades h2 {
+    margin-top: -100px;
+    margin-bottom: -20px; } }
+
+@media screen and (max-width: 550px) {
+  .elaboracion div img {
+    height: 350px;
+    width: 350px; }
+  .elaboracion .titulo {
+    font-size: 18px; }
+  .botanicos div img {
+    height: 300px;
+    width: 300px; }
+  .variedades div img {
+    height: 400px;
+    width: 400px; }
+  .variedades div .blanco {
+    margin-bottom: -100px; }
+  .variedades h2 {
+    font-size: 16px; } }
+
+@media screen and (max-width: 500px) {
+  .nosotros img {
+    height: 380px;
+    width: 300px; }
+  .nosotros div .titulo {
+    font-size: 16px; }
+  .nosotros div .descripcion {
+    font-size: 13px;
+    width: 380px; } }
+
+@media screen and (max-width: 450px) {
+  .nosotros div .descripcion {
+    width: 300px; }
+  .elaboracion div img {
+    height: 300px;
+    width: 300px; }
+  .elaboracion div p {
+    width: 300px; }
+  .elaboracion .titulo {
+    margin-top: -80px; }
+  .botanicos div img {
+    height: 280px;
+    width: 280px; }
+  .botanicos div p {
+    width: 290px; }
+  .variedades div img {
+    width: 330px;
+    height: 330px; }
+  .variedades div .blanco {
+    margin-bottom: -150px; } }
+
+@media screen and (max-width: 350px) {
+  .nosotros div .descripcion {
+    width: 260px; }
+  .nosotros img {
+    height: 340px;
+    width: 280px; }
+  .elaboracion div img {
+    height: 250px;
+    width: 250px; }
+  .elaboracion div p {
+    width: 250px; }
+  .botanicos div img {
+    width: 250px;
+    height: 250px; }
+  .botanicos div p {
+    width: 250px; }
+  .variedades div img {
+    height: 250px;
+    width: 250px; }
+  .variedades h2 {
+    font-size: 14px;
+    margin-top: -90px;
+    margin-bottom: -20px; } }
+
+/* RECETAS */
+@media screen and (max-width: 1280px) {
+  .cocteles {
+    background-image: url(../img/fondo-2.jpg); } }
+
+@media screen and (max-width: 1100px) {
+  .cocteles {
+    background-image: url(../img/fondo-3.jpg); } }
+
+@media screen and (max-width: 1024px) {
+  .img-cocteles div img {
+    height: 400px;
+    width: 400px; }
+  .img-cocteles div ul h3 {
+    font-size: 18px; }
+  .img-cocteles div ul li {
+    font-size: 14px; } }
+
+@media screen and (max-width: 980px) {
+  .cocteles {
+    background-image: url(../img/fondo-4.jpg); } }
+
+@media screen and (max-width: 940px) {
+  .img-cocteles h2 {
+    width: 500px;
+    align-self: center; } }
+
+@media screen and (max-width: 885px) {
+  .cocteles {
+    background-image: url(../img/fondo-5.jpg); } }
+
+@media screen and (max-width: 860px) {
+  .img-cocteles div img {
+    height: 350px;
+    width: 350px; }
+  .img-cocteles div ul h3 {
+    font-size: 16px; }
+  .img-cocteles div ul li {
+    font-size: 12px; } }
+
+@media screen and (max-width: 790px) {
+  .img-cocteles {
+    margin-top: -30px; }
+    .img-cocteles div {
+      flex-direction: column; }
+      .img-cocteles div img {
+        align-self: center;
+        height: 400px;
+        width: 400px;
+        margin-bottom: 30px;
+        margin-top: -19px; }
+      .img-cocteles div ul {
+        align-self: center;
+        padding: 30px; }
+        .img-cocteles div ul h3 {
+          padding-bottom: 18px; }
+    .img-cocteles h2 {
+      margin-bottom: 60px;
+      margin-top: 30px; }
+    .img-cocteles .negroni {
+      flex-direction: column-reverse; }
+    .img-cocteles .martini {
+      flex-direction: column-reverse; }
+    .img-cocteles .americano {
+      margin-bottom: -200px; } }
+
+@media screen and (max-width: 550px) {
+  .cocteles {
+    background-image: url(../img/fondo-6.jpg); }
+  .img-cocteles div img {
+    height: 350px;
+    width: 350px; }
+  .img-cocteles h1 {
+    font-size: 20px; }
+  .img-cocteles h2 {
+    font-size: 14px;
+    width: 400px; } }
+
+@media screen and (max-width: 400px) {
+  .cocteles {
+    background-image: url(../img/fondo-7.jpg); }
+  .img-cocteles h1 {
+    font-size: 16px; }
+  .img-cocteles h3 {
+    font-size: 12px;
+    width: 300px; }
+  .img-cocteles div img {
+    height: 300px;
+    width: 300px; }
+  .img-cocteles div ul h3 {
+    font-size: 14px; }
+  .img-cocteles div ul li {
+    font-size: 11px; } }
+
+@media screen and (max-width: 350px) {
+  .img-cocteles div img {
+    height: 240px;
+    width: 240px; }
+  .img-cocteles div ul h3 {
+    font-size: 13px; }
+  .img-cocteles div ul li {
+    font-size: 10px;
+    width: 200px; }
+  .img-cocteles h2 {
+    font-size: 12px;
+    width: 250px; } }
+
+/* DONDE ENCONTRARNOS */
+@media screen and (max-width: 1080px) {
+  .donde-encontrarnos .frames .direcciones iframe {
+    height: 300px;
+    width: 400px; } }
+
+@media screen and (max-width: 890px) {
+  .donde-encontrarnos .frames {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: -140px; }
+    .donde-encontrarnos .frames .direcciones {
+      margin: 30px; }
+      .donde-encontrarnos .frames .direcciones .zapata {
+        margin-top: -60px; }
+      .donde-encontrarnos .frames .direcciones .salmuera {
+        margin-top: -60px; }
+      .donde-encontrarnos .frames .direcciones iframe {
+        height: 400px;
+        width: 500px; }
+  .donde-encontrarnos h2 {
+    margin-bottom: -100px; } }
+
+@media screen and (max-width: 550px) {
+  .donde-encontrarnos .frames .direcciones iframe {
+    height: 250px;
+    width: 350px; } }
+
+@media screen and (max-width: 425px) {
+  .donde-encontrarnos .frames .direcciones iframe {
+    height: 200px;
+    width: 300px; }
+  .donde-encontrarnos .frames .direcciones h3 {
+    font-size: 15px; }
+  .donde-encontrarnos .frames .direcciones p {
+    font-size: 13px; }
+  .donde-encontrarnos h1 {
+    font-size: 18px; }
+  .donde-encontrarnos h2 {
+    font-size: 15px; } }
+
+@media screen and (max-width: 350px) {
+  .donde-encontrarnos .frames .direcciones iframe {
+    height: 200px;
+    width: 250px; } }
+
+/* CONTACTO */
+@media screen and (max-width: 630px) {
+  .contacto {
+    margin-top: 190px;
+    margin-bottom: -100px; }
+    .contacto .inputs .input-group .name {
+      width: 200px; }
+    .contacto .inputs .input-group .email {
+      width: 200px; } }
+
+@media screen and (max-width: 430px) {
+  .contacto h1 {
+    font-size: 18px; }
+  .contacto .inputs .input-group .name {
+    width: 170px; }
+  .contacto .inputs .input-group .email {
+    width: 170px; } }
+
+@media screen and (max-width: 380px) {
+  .contacto {
+    margin-bottom: -200px; }
+    .contacto .inputs {
+      padding: 30px; }
+      .contacto .inputs .input-group .name {
+        width: 140px; }
+      .contacto .inputs .input-group .email {
+        width: 140px; }
+    .contacto .button .btn {
+      margin-top: -10px; } }
+
+@media screen and (max-width: 360px) {
+  .contacto .inputs .input-group .name {
+    width: 110px; }
+  .contacto .inputs .input-group .email {
+    width: 110px; } }
+
+/* FOOTER */
+@media screen and (max-width: 430px) {
+  footer h3 {
+    font-size: 15px; } }

@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap');
+
+/*RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.titulo {
+    font-size: 28px;
+    font-family: "gobold_thinregular";
+    color: rgb(134, 76, 14);
+    margin-bottom: 8px;
+}
+
+/*CONTACTO: CLASES BOOTSTRAP */
+
+.inputs{
+        margin-top: 20px;
+        font-family: 'Montserrat', sans-serif;
+        .input-group{
+            .name{
+                margin-right: 13px;
+                width: 280px;
+            }
+            .email{
+                width: 280px;
+            }
+            }
+            .subject{
+                margin-top: 10px;
+            }
+            .message{
+                margin-top: 10px;
+            }
+        }
+        .button{
+            .btn{
+                border: 1px white solid;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 65px;
+                height: 35px;
+                margin-top: 17px;
+                font-family: 'Montserrat', sans-serif;
+                color: white;
+                border-radius: 0;
+                &:hover{
+                    background-color: rgb(137,83,19);
+                    color: white;
+                }
+            }
+        }

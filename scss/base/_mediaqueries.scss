@@ -1,0 +1,1056 @@
+/*MEDIA QUERIES*/
+
+/* HEADER */
+
+@media screen and (max-width:700px){
+    header{
+        position: absolute;
+        top: 0;
+        .abrir-menu{
+            display: block;
+            margin-top: 20px;
+            margin-left: 30px;
+        }
+        nav{
+            visibility: hidden;
+            .cerrar{
+                display: block;
+                margin-left: 30px;
+                margin-top: -35px;
+            }
+            ul{
+                flex-direction: column;
+                justify-content: flex-start;
+                text-align: left;
+                margin-top: 16px;
+                height: 508px;
+                background-color: rgba(0,0,0,0.7);
+                position: relative;
+                top: 9px;
+                li{
+                    a{
+                        &:hover{
+                            color: rgb(137,83,19);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    }
+    
+    @media screen and (max-width:550px) {
+        header{
+            nav{
+                ul{
+                    li{
+                        a{
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    @media screen and (max-width:400px) {
+        header{
+            nav{
+                ul{
+                    li{
+                        a{
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    
+    }
+    
+    /* HOME */
+    
+    @media (max-width:1440px) and (min-width:1360px) {
+        .home {
+            background-image: url(../img/portada-6.jpg);
+        }
+    }
+    
+    @media screen and (max-width:990px) {
+        .home{
+            background-image: url(../img/portada-2.jpg);
+        }
+        
+    }
+    
+    @media screen and (max-width:770px) {
+            .home{
+                background-image: url(../img/portada-3.jpg);
+                div{
+                    h1{
+                        top: 150px;
+                        left: 20px;
+                        span{
+                            margin-left: 40px;
+                        }
+                    }
+                }
+            }
+    }
+    
+    @media screen and (max-width:600px) {
+        .home{
+            background-image: url(../img/portada-5.jpg);
+            div{
+                h1{
+                    display: none;
+                }
+            }
+        }
+    }
+    
+    @media screen and (max-width:560px) {
+        .home{
+            background-image: url(../img/portada-7.jpg);
+        }
+    }
+    
+    @media screen and (max-width:400px) {
+        .home{
+            background-image: url(../img/portada-8.jpg);
+        } 
+    }
+    
+    @media screen and (max-width:1200px) {
+            .logo{
+                p{
+                    width: 400px;
+                }
+            }
+        }
+    
+    @media screen and (max-width:1100px) {
+        .logo {
+            margin-bottom: -180px;
+                img{
+                    height: 500px;
+                    width: 500px;
+            }
+        }
+    }
+    
+    @media screen and (max-width:936px) {
+        .logo {
+        margin-bottom: -180px;
+                p{
+                    width: 300px;
+                    font-size: 16px;
+            }
+        }
+    }
+    
+    @media screen and (max-width:870px) {
+        .logo{
+            img{
+                height: 450px;
+                width: 450px;
+            }
+        }
+    }
+    
+    @media screen and (max-width:786px) {
+        .logo{
+            img{
+                height: 400px;
+                width: 400px;
+            }
+            p{
+                width: 300px;
+                font-size: 14px;
+            }
+        }
+    }
+    
+    @media screen and (max-width:720px) {
+        .logo{
+            img{
+                height: 350px;
+                width: 350px;
+            }
+            p{
+                width: 250px;
+            }
+        }
+    }
+    
+    @media screen and (max-width:680px) {
+        .logo {
+            grid-template-columns: 1fr;
+            margin-top: 150px;
+            img{
+                height: 400px;
+                width: 400px;
+                justify-self: center;
+                border-radius: 25px;
+                margin-top: -20px;
+            }
+            p{
+                width: 350px;
+                margin-top: 40px;
+                font-size: 14px;
+            }
+        }
+    }
+    
+    @media screen and (max-width:425px) {
+        .logo {
+            margin-bottom: -230px;
+            img{
+                height: 300px;
+                width: 300px;
+                margin-top: -20px;
+            }
+            p{
+                font-size: 13px;
+                width: 300px;
+            }
+        }
+    }
+    
+    @media screen and (max-width:320px) {
+        .logo{
+            img{
+                height: 250px;
+                width: 250px;
+                margin-top: -40px;
+            }
+            p{
+                width: 250px;
+            }
+        }
+    }
+
+/* NOSOTROS */
+
+@media screen and (max-width:1320px) {
+    .variedades{
+        div{
+            img{
+                height: 530px;
+                width: 530px;
+            }
+        }
+}
+}
+
+@media screen and (max-width:1280px) {
+    .nosotros{
+        img{
+            height: 650px;
+            width: 550px;
+        }
+        div{
+            .titulo{
+                font-size: 20px;
+            }
+            .descripcion{
+                font-size: 16px;
+            }
+        }
+    }
+
+    .elaboracion{
+        .titulo{
+            margin-top: -30px;
+        }
+        div{
+            img{
+                height: 500px;
+                width: 500px;
+            }
+            p{
+                font-size: 16px;
+                width: 380px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1150px) {
+    .nosotros{
+        img{
+            height: 590px;
+            width: 490px;
+        }
+        div{
+            .titulo{
+                font-size: 19px;
+            }
+            .descripcion{
+                font-size: 14px;
+            }
+        }
+    }
+
+    .elaboracion{
+        div{
+            img{
+                height: 450px;
+                width: 450px;
+            }
+            p{
+                width: 350px;
+            }
+        }
+    }
+
+    .variedades{
+        div{
+            img{
+                height: 500px;
+                width: 500px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:1090px) {
+    .nosotros {
+        flex-direction: column-reverse;
+        justify-content: center;
+        img{
+            border-top-left-radius: 0px;
+            margin-top: 130px;
+            align-self: center;
+            justify-self: center;
+        }
+        div{
+            margin-top: -110px;
+            margin-bottom: 70px;
+            .titulo{
+                font-size: 22px;
+            }
+            .descripcion{
+                width: 580px;
+                font-size: 15px;
+            }
+        }
+    }
+
+    .elaboracion{
+        .titulo{
+            align-self: center;
+        }
+    }
+
+    .variedades{
+        div{
+            flex-direction: column;
+            img{
+                align-self: center;
+                height: 550px;
+                width: 550px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .botanicos{
+        div{
+            img{
+                height: 400px;
+                width: 400px;
+            }
+            p{
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:980px) {
+    .elaboracion{
+        .titulo{
+            font-size: 23px;
+        }
+        div{
+            img{
+                height: 400px;
+                width: 400px;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:930px) {
+    .botanicos{
+        div{
+            flex-direction: column;
+            img{
+                align-self: center;
+            }   
+            p{
+                padding-top: 40px;
+                width: 450px;
+            }
+        }
+        .anis{
+            flex-direction: column-reverse;
+            padding-top: 100px;
+        }
+        .jengibre{
+            flex-direction: column-reverse;
+            margin-top: -10px;
+        }
+        .cardamomo{
+            margin-top: -10px;
+        }
+        .canela{
+            margin-top: -10px;
+        }
+    }
+
+    .variedades{
+        h2{
+            margin-top: -50px;
+        }
+    }
+}
+
+@media screen and (max-width:890px) {
+    .nosotros{
+        img{
+            height: 530px;
+            width: 430px;
+        }
+        div{
+            .descripcion{
+                font-size: 14px;
+            }
+        }
+    }
+
+    .elaboracion{
+        div{
+            flex-direction: column;
+            img{
+                margin-top: -30px;
+            }
+            p{
+                margin-top: 50px;
+                width: 550px;
+                margin-bottom: -100px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:690px) {
+    .nosotros{
+        img{
+            height: 500px;
+            width: 400px;
+        }
+        div{
+            .descripcion{
+                font-size: 13px;
+            }
+        }
+    }
+
+    .elaboracion{
+        div{
+            img{
+                height: 370px;
+                width: 370px;
+            }
+            p{
+                font-size: 13px;
+                width: 430px;
+            }
+        }
+    }
+
+    .botanicos{
+        div{
+            img{
+                height: 350px;
+                width: 350px;
+            }
+            p{
+                font-size: 14px;
+                width: 350px;
+            }
+        }
+    }
+
+    .variedades{
+        h2{
+            font-size: 18px;
+        }
+        div{
+            img{
+                height: 480px;
+                width: 480px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:640px) {
+    .nosotros{
+        img{
+            height: 400px;
+            width: 320px;
+        }
+        div{
+            .titulo{
+                font-size: 18px;
+            }
+            .descripcion{
+                font-size: 13px;
+                width: 450px;
+            }
+        }
+    }
+
+    .elaboracion{
+        .titulo{
+            margin-top: -100px;
+        }
+    }
+
+    .variedades{
+        h2{
+            margin-top: -100px;
+            margin-bottom: -20px;
+        }
+    }
+}
+
+@media screen and (max-width:550px) {
+    .elaboracion{
+        div{
+            img{
+                height: 350px;
+                width: 350px;
+            }
+        }
+        .titulo{
+            font-size: 18px;
+        }
+    }
+
+    .botanicos{
+        div{
+            img{
+                height: 300px;
+                width: 300px;
+            }
+        }
+    }
+
+    .variedades{
+        div{
+            img{
+                height: 400px;
+                width: 400px;
+            }
+            .blanco{
+                margin-bottom: -100px;
+            }
+        }
+        h2{
+            font-size: 16px;
+        }
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    .nosotros{
+        img{
+            height: 380px;
+            width: 300px;
+        }
+        div{
+            .titulo{
+                font-size: 16px;
+            }
+            .descripcion{
+                font-size: 13px;
+                width: 380px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:450px) {
+    .nosotros{
+        div{
+            .descripcion{
+                width: 300px;
+            }
+        }
+    }
+
+    .elaboracion{
+        div{
+            img{
+                height: 300px;
+                width: 300px;
+            }
+            p{
+                width: 300px;
+            }
+        }
+        .titulo{
+            margin-top: -80px;
+        }
+    }
+
+    .botanicos{
+        div{
+            img{
+                height: 280px;
+                width: 280px;
+            }
+            p{
+                width: 290px;
+            }
+        }
+    }
+
+    .variedades{
+        div{
+            img{
+                width: 330px;
+                height: 330px;
+            }
+            .blanco{
+                margin-bottom: -150px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:350px) {
+    .nosotros{
+        div{
+            .descripcion{
+                width: 260px;
+            }
+        }
+        img{
+            height: 340px;
+            width: 280px;
+        }
+    }
+
+    .elaboracion{
+        div{
+            img{
+                height: 250px;
+                width: 250px;
+            }
+            p{
+                width: 250px;
+            }
+        }
+    }
+
+    .botanicos{
+        div{
+            img{
+                width: 250px;
+                height: 250px;
+            }
+            p{
+                width: 250px;
+            }
+        }
+    }
+
+    .variedades{
+        div{
+            img{
+                height: 250px;
+                width: 250px;
+            }
+        }
+        h2{
+            font-size: 14px;
+            margin-top: -90px;
+            margin-bottom: -20px;
+        }
+    }
+}
+
+/* RECETAS */
+
+@media screen and (max-width:1280px) {
+    .cocteles {
+        background-image: url(../img/fondo-2.jpg);
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .cocteles {
+        background-image: url(../img/fondo-3.jpg);
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .img-cocteles{
+        div{
+            img{
+                height: 400px;
+                width: 400px;
+            }
+        }
+        div{
+            ul{
+                h3{
+                    font-size: 18px;
+                }
+                li{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:980px) {
+    .cocteles {
+        background-image: url(../img/fondo-4.jpg);
+    }
+}
+
+@media screen and (max-width:940px) {
+    .img-cocteles{
+        h2{
+            width: 500px;
+            align-self: center;
+        }
+    }
+}
+
+@media screen and (max-width:885px) {
+    .cocteles {
+        background-image: url(../img/fondo-5.jpg);
+    }
+}
+
+
+@media screen and (max-width:860px) {
+    .img-cocteles{
+        div{
+            img{
+                height: 350px;
+                width: 350px;
+            }
+            ul{
+                h3{
+                    font-size: 16px;
+                }
+                li{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:790px) {
+    .img-cocteles {
+        margin-top: -30px;
+        div{
+            flex-direction: column;
+            img{
+                align-self: center;
+                height: 400px;
+                width: 400px;
+                margin-bottom: 30px;
+                margin-top: -19px;
+            }
+            ul{
+                align-self: center;
+                padding: 30px;
+                h3{
+                    padding-bottom: 18px;
+                }
+            }
+        }
+        h2{
+            margin-bottom: 60px;
+            margin-top: 30px;
+        }
+        .negroni{
+            flex-direction: column-reverse;
+        }
+        .martini{
+            flex-direction: column-reverse;
+        }
+        .americano{
+            margin-bottom: -200px;
+        }
+    }
+}
+
+@media screen and (max-width:550px) {
+    .cocteles {
+        background-image: url(../img/fondo-6.jpg);
+    }
+
+    .img-cocteles{
+        div{
+            img{
+                height: 350px;
+                width: 350px;
+            }
+        }
+        h1{
+            font-size: 20px;
+        }
+        h2{
+            font-size: 14px;
+            width: 400px;
+        }
+    }
+}
+
+@media screen and (max-width:400px) {
+    .cocteles {
+        background-image: url(../img/fondo-7.jpg);
+    }
+
+    .img-cocteles{
+        h1{
+            font-size: 16px;
+        }
+        h3{
+            font-size: 12px;
+            width: 300px;
+        }
+        div{
+            img{
+                height: 300px;
+                width: 300px;
+            }
+            ul{
+                h3{
+                    font-size: 14px;
+                }
+                li{
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:350px) {
+    .img-cocteles{
+        div{
+            img{
+                height: 240px;
+                width: 240px;
+            }
+            ul{
+                h3{
+                    font-size: 13px;
+                }
+                li{
+                    font-size: 10px;
+                    width: 200px;
+                }
+            }
+        }
+        h2{
+            font-size: 12px;
+            width: 250px;
+        }
+    }
+}
+
+/* DONDE ENCONTRARNOS */
+
+@media screen and (max-width:1080px) {
+    .donde-encontrarnos{
+        .frames{
+            .direcciones{
+                iframe{
+                    height: 300px;
+                    width: 400px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:890px) {
+    .donde-encontrarnos{
+        .frames{
+            flex-direction: column;
+            text-align: center;
+            margin-bottom: -140px;
+            .direcciones{
+                margin: 30px;
+                .zapata{
+                    margin-top: -60px;
+                }
+                .salmuera{
+                    margin-top: -60px;
+                }
+                iframe{
+                    height: 400px;
+                    width: 500px;
+                }
+            }
+        }
+        h2{
+            margin-bottom: -100px;
+        }
+    }
+}
+
+@media screen and (max-width:550px) {
+    .donde-encontrarnos{
+        .frames{
+            .direcciones{
+                iframe{
+                    height: 250px;
+                    width: 350px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:425px) {
+    .donde-encontrarnos{
+        .frames{
+            .direcciones{
+                iframe{
+                    height: 200px;
+                    width: 300px;
+                }
+                h3{
+                    font-size: 15px;
+                }
+                p{
+                    font-size: 13px;
+                }
+            }
+        }
+        h1{
+            font-size: 18px;
+        }
+        h2{
+            font-size: 15px;
+        }
+    }
+}
+
+@media screen and (max-width:350px) {
+    .donde-encontrarnos{
+        .frames{
+            .direcciones{
+                iframe{
+                    height: 200px;
+                    width: 250px;
+                }
+            }
+        }
+    }
+}
+
+/* CONTACTO */
+
+@media screen and (max-width:630px) {
+    .contacto{
+        margin-top: 190px;
+        margin-bottom: -100px;
+        .inputs{
+            .input-group{
+                .name{
+                    width: 200px;
+                }
+                .email{
+                    width: 200px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:430px) {
+    .contacto{
+        h1{
+            font-size: 18px;
+        }
+        .inputs{
+            .input-group{
+                .name{
+                    width: 170px;
+                }
+                .email{
+                    width: 170px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:380px) {
+    .contacto{
+        margin-bottom: -200px;
+        .inputs{
+            padding: 30px;
+            .input-group{
+                .name{
+                    width: 140px;
+                }
+                .email{
+                    width: 140px;
+                }
+            }
+        }
+        .button{
+            .btn{
+                margin-top: -10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:360px) {
+    .contacto{
+        .inputs{
+            .input-group{
+                .name{
+                    width: 110px;
+                }
+                .email{
+                    width: 110px;
+                }
+            }
+        }
+    }
+}
+
+/* FOOTER */
+
+@media screen and (max-width:430px) {
+    footer{
+        h3{
+            font-size: 15px;
+        }
+    }
+}
