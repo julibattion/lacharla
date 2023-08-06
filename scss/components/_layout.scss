@@ -7,9 +7,9 @@
         div{
             h1{
                 color: white;
-                font-family: 'Montserrat', sans-serif;
+                font-family: nth($font-family,2);
                 font-weight: 100;
-                font-size: 22px;
+                font-size: nth($font-size,5);
                 position: absolute;
                 bottom: 90px;
                 left: 50px;
@@ -29,9 +29,9 @@
             border-top-right-radius: 100px;
         }
         p{
-            font-family: 'Montserrat', sans-serif;
-            font-size: 18px;
-            color: black;
+            font-family: nth($font-family,2);
+            font-size: nth($font-size,3);
+            color: $color-secundario;
             text-align: center;
             width: 550px;
             align-self: center;
@@ -42,23 +42,21 @@
 /* NOSOTROS */
 
     .nosotros{
-        display: flex;
-        justify-content: space-evenly;
-        background-color: rgb(137,83,19);
-        align-items: center;
+        @extend %flex;
+        background-color: $color-primario;
         div{
             text-align: center;
             align-self: center;
             .titulo{
-                color: black;
+                color: $color-secundario;
             }
             .descripcion{
-                font-size: 18px;
+                font-size: nth($font-size,3);
                 font-weight: 400;
-                font-family: 'Montserrat', sans-serif;
+                font-family: nth($font-family,2);
                 text-align: center;
                 width: 500px;
-                color: black;
+                color: $color-secundario;
             }
         }
         img{
@@ -73,13 +71,11 @@
         margin-top: 200px;
         .titulo{
             text-align: center;
-            color: rgb(137,83,19);
+            color: $color-primario;
         }
         div{
-            display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        margin-top: 100px;
+            @extend %flex;
+            margin-top: 100px;
             img{
                 height: 550px;
                 width: 550px;
@@ -87,27 +83,26 @@
             p{
                 font-size: 19px;
                 font-weight: 400;
-                font-family: 'Montserrat', sans-serif;
+                font-family: nth($font-family,2);
                 text-align: center;
                 width: 400px;
             }
         }
     }
     .botanicos{
-        background-color:rgb(95,30,24);
+        background-color:$color-terciario;
         margin-top: 270px;
         div{
-            display: flex;
+            @include flex (flex,space-evenly);
             margin-top: 0px;
-            justify-content: space-evenly;
             padding: 50px;
             p{
                 width: 500px;
                 text-align: center;
                 align-self: center;
-                font-size: 18px;
+                font-size: nth($font-size,3);
                 color: white;
-                font-family: 'Montserrat', sans-serif;
+                font-family: nth($font-family,2);
             }
             img{
                 height: 500px;
@@ -119,12 +114,12 @@
         margin-top: 200px;
         h2{
             font-size: 25px;
-            font-family: "gobold_thinregular";
+            font-family: nth($font-family,1);
             text-align: center;
+            color: $color-primario;
         }
         div{
-            display: flex;
-            justify-content: space-around;
+            @include flex (flex,space-around);
             img{
                 height: 600px;
                 width: 600px;
@@ -142,26 +137,24 @@
         display: flex;
     }
     .img-cocteles{
-        display: flex;
-        justify-content: center;
+        @include flex (flex,center);
         flex-direction: column;
         h1{
-            font-family: "gobold_thinregular";
-            color: rgb(134, 76, 14);
+            font-family: nth($font-family,1);
+            color: $color-primario;
             margin-top: 120px;
             text-align: center;
-            font-size: 26px;
+            font-size: nth($font-size,6);
         }
         h2{
-            font-family: 'Montserrat', sans-serif;
+            font-family: nth($font-family,2);
             font-size: 15px;
             font-weight: 500;
             text-align: center;
             margin-top: 20px;
         }
         div{
-            display: flex;
-            justify-content: space-evenly;
+            @include flex (flex,space-evenly);
             margin-top: 40px;
             img{
                 height: 550px;
@@ -171,16 +164,16 @@
             ul{
                 align-self: center;
                 h3{
-                    color: rgb(134, 76, 14);
-                    font-family: "gobold_thinregular";
+                    color: $color-primario;
+                    font-family: nth($font-family,1);
                     text-align: center;
                     font-size: 25px;
                 }
                 li{
-                    font-family: 'Montserrat', sans-serif;
+                    font-family: nth($font-family,2);
                     list-style: none;
                     width: 300px;
-                    font-size: 16px;
+                    font-size: nth($font-size,2);
                 }
             }
         }
@@ -189,19 +182,19 @@
 /* DONDE ENCONTRARNOS */
 
 .donde-encontrarnos{
-        background-color:rgb(95,30,24);
+        background-color:$color-terciario;
         h1{
-            font-family: "gobold_thinregular";
+            font-family: nth($font-family,1);
             color: white;
             text-align: center;
             padding-top: 160px;
-            font-size: 26px;
+            font-size: nth($font-size,6);
             font-weight: 500;
         }
         h2{
-            font-family: "gobold_thinregular";
+            font-family: nth($font-family,1);
             text-align: center;
-            font-size: 18px;
+            font-size: nth($font-size,3);
             font-weight: 300;
             margin-top: 20px;
             margin-bottom: -40px;
@@ -210,14 +203,13 @@
         .frames{
             margin-top: 150px;
             padding-bottom: 50px;
-            display: flex;
-            justify-content: space-evenly;
+            @include flex (flex,space-evenly);
             .direcciones{
-                font-family: 'Montserrat', sans-serif;
+                font-family: nth($font-family,2);
                 color: white;
                 h3{
                     font-weight: 600;
-                    font-size: 20px;
+                    font-size: nth($font-size,4);
                     text-align: center;
                 }
                 p{
@@ -238,18 +230,15 @@
 /*CONTACTO */
 
 .contacto{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    @extend %flex-2;
     margin-top: 150px;
-    background-color:rgb(95,30,24);
+    background-color:$color-terciario;
     height: 500px;
     margin-bottom: 50px;
     h1{
-        font-family: "gobold_thinregular";
+        font-family: nth($font-family,1);
         color: white;
-        font-size: 26px;
+        font-size: nth($font-size,6);
         font-weight: 500;
     }
     img{
@@ -257,7 +246,7 @@
         width: 20px;
     }
     h3{
-        font-family: 'Montserrat', sans-serif;
+        font-family: nth($font-family,2);
         font-weight: 400;
         font-size: 15px;
         color: white;

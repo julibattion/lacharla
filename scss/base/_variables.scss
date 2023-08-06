@@ -1,0 +1,30 @@
+$color-primario:rgb(137,83,19);
+$color-secundario:black;
+$color-terciario:rgb(95,30,24);
+
+/* LISTAS */ 
+
+$font-size: 14px,16px,18px,20px,22px,26px;
+$font-family:"gobold_thinregular",'Montserrat', sans-serif;
+
+/* EXTENDS */
+
+%flex{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+%flex-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* MIXINS */
+
+@mixin flex ($flex, $justify){
+    display: $flex;
+    justify-content: $justify;
+}

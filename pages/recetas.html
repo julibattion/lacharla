@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="../css/estilos.css"/>
     <link rel="icon" href="../img/lacharla.png">
     <link rel="stylesheet" href="../fonts/stylesheet.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -43,7 +44,7 @@
             <h1>Cócteles</h1>
             <h2>Te dejamos algunas ideas de cócteles que podes preparar con la charla para disfrutar con tus amigos</h2>
 
-            <div>
+            <div data-aos="fade-left" data-aos-offset="300" data-aos-duration="300">
                 <img src="../img/manhattan.jpg" alt="trago manhattan">
                     <ul>
                         <h3>Manhattan</h3>
@@ -58,7 +59,7 @@
                     </ul>
             </div>
 
-            <div class="negroni">
+            <div class="negroni" data-aos="fade-right" data-aos-offset="300" data-aos-duration="300">
                     <ul>
                         <h3>Negroni</h3>
                         <li>Utilizar un vaso corto estilo oldfashioned y colocar abundante hielo.</li>
@@ -71,7 +72,7 @@
                 <img src="../img/negroni.jpg" alt="trago negroni">
             </div>
 
-            <div>
+            <div data-aos="fade-left" data-aos-offset="300" data-aos-duration="300">
                 <img src="../img/ferroviario.jpg" alt="trago ferroviario">
                     <ul>
                         <h3>Ferroviario</h3>
@@ -84,21 +85,21 @@
                     </ul>
             </div>
 
-            <div class="martini">
-                    <ul>
-                        <h3>Martini</h3>
-                        <li>Añadir en un vaso mezclador:</li>
-                        <li>-75ml de gin</li>
-                        <li>-15ml de vermouth blanco la charla</li>
-                        <li>-Hielo</li>
-                        <li>Con una cuchara revolver con suavidad la mezcla.</li>
-                        <li>Colar el contenido, separando el hielo sobre una copa de martini fría.</li>
-                        <li>Decorar con aceitunas y/o piel de limón.</li>
-                    </ul>
-                <img src="../img/martini.jpg" alt="trago martini">
+            <div class="martini" data-aos="fade-right" data-aos-offset="300" data-aos-duration="250">
+                <ul>
+                    <h3>Martini</h3>
+                    <li>Añadir en un vaso mezclador:</li>
+                    <li>-75ml de gin</li>
+                    <li>-15ml de vermouth blanco la charla</li>
+                    <li>-Hielo</li>
+                    <li>Con una cuchara revolver con suavidad la mezcla.</li>
+                    <li>Colar el contenido, separando el hielo sobre una copa de martini fría.</li>
+                    <li>Decorar con aceitunas y/o piel de limón.</li>
+                </ul>
+            <img src="../img/martini.jpg" alt="trago martini">
             </div>
 
-            <div class="americano">
+            <div class="americano" data-aos="fade-left" data-aos-offset="300" data-aos-duration="250">
                 <img src="../img/americano.jpg" alt="trago americano">
                     <ul>
                         <h3>Americano</h3>
@@ -137,5 +138,11 @@
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="../js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once:true
+        });
+    </script>
 </body>
 </html>
