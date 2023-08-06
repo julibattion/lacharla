@@ -711,45 +711,56 @@ footer {
 /* RECETAS */
 @media screen and (max-width: 1280px) {
   .cocteles {
-    background-image: url(../img/fondo-2.jpg); } }
+    background-image: url(../img/fondo-2.jpg);
+    overflow-x: hidden; } }
 
 @media screen and (max-width: 1100px) {
   .cocteles {
-    background-image: url(../img/fondo-3.jpg); } }
+    background-image: url(../img/fondo-3.jpg);
+    overflow-x: hidden; } }
 
 @media screen and (max-width: 1024px) {
-  .img-cocteles div img {
-    height: 400px;
-    width: 400px; }
-  .img-cocteles div ul h3 {
-    font-size: 18px; }
-  .img-cocteles div ul li {
-    font-size: 14px; } }
+  .img-cocteles {
+    overflow-x: hidden; }
+    .img-cocteles div img {
+      height: 400px;
+      width: 400px; }
+    .img-cocteles div ul h3 {
+      font-size: 18px; }
+    .img-cocteles div ul li {
+      font-size: 14px; } }
 
 @media screen and (max-width: 980px) {
   .cocteles {
+    overflow-x: hidden;
     background-image: url(../img/fondo-4.jpg); } }
 
 @media screen and (max-width: 940px) {
-  .img-cocteles h2 {
-    width: 500px;
-    align-self: center; } }
+  .img-cocteles {
+    overflow-x: hidden; }
+    .img-cocteles h2 {
+      width: 500px;
+      align-self: center; } }
 
 @media screen and (max-width: 885px) {
   .cocteles {
+    overflow-x: hidden;
     background-image: url(../img/fondo-5.jpg); } }
 
 @media screen and (max-width: 860px) {
-  .img-cocteles div img {
-    height: 350px;
-    width: 350px; }
-  .img-cocteles div ul h3 {
-    font-size: 16px; }
-  .img-cocteles div ul li {
-    font-size: 12px; } }
+  .img-cocteles {
+    overflow-x: hidden; }
+    .img-cocteles div img {
+      height: 350px;
+      width: 350px; }
+    .img-cocteles div ul h3 {
+      font-size: 16px; }
+    .img-cocteles div ul li {
+      font-size: 12px; } }
 
 @media screen and (max-width: 790px) {
   .img-cocteles {
+    overflow-x: hidden;
     margin-top: -30px; }
     .img-cocteles div {
       flex-direction: column; }
@@ -776,44 +787,52 @@ footer {
 
 @media screen and (max-width: 550px) {
   .cocteles {
+    overflow-x: hidden;
     background-image: url(../img/fondo-6.jpg); }
-  .img-cocteles div img {
-    height: 350px;
-    width: 350px; }
-  .img-cocteles h1 {
-    font-size: 20px; }
-  .img-cocteles h2 {
-    font-size: 14px;
-    width: 400px; } }
+  .img-cocteles {
+    overflow-x: hidden; }
+    .img-cocteles div img {
+      height: 350px;
+      width: 350px; }
+    .img-cocteles h1 {
+      font-size: 20px; }
+    .img-cocteles h2 {
+      font-size: 14px;
+      width: 400px; } }
 
 @media screen and (max-width: 400px) {
   .cocteles {
+    overflow-x: hidden;
     background-image: url(../img/fondo-7.jpg); }
-  .img-cocteles h1 {
-    font-size: 16px; }
-  .img-cocteles h2 {
-    font-size: 12px;
-    width: 300px; }
-  .img-cocteles div img {
-    height: 300px;
-    width: 300px; }
-  .img-cocteles div ul h3 {
-    font-size: 14px; }
-  .img-cocteles div ul li {
-    font-size: 11px; } }
+  .img-cocteles {
+    overflow-x: hidden; }
+    .img-cocteles h1 {
+      font-size: 16px; }
+    .img-cocteles h2 {
+      font-size: 12px;
+      width: 300px; }
+    .img-cocteles div img {
+      height: 300px;
+      width: 300px; }
+    .img-cocteles div ul h3 {
+      font-size: 14px; }
+    .img-cocteles div ul li {
+      font-size: 11px; } }
 
 @media screen and (max-width: 350px) {
-  .img-cocteles div img {
-    height: 240px;
-    width: 240px; }
-  .img-cocteles div ul h3 {
-    font-size: 13px; }
-  .img-cocteles div ul li {
-    font-size: 10px;
-    width: 200px; }
-  .img-cocteles h2 {
-    font-size: 12px;
-    width: 250px; } }
+  .img-cocteles {
+    overflow-x: hidden; }
+    .img-cocteles div img {
+      height: 240px;
+      width: 240px; }
+    .img-cocteles div ul h3 {
+      font-size: 13px; }
+    .img-cocteles div ul li {
+      font-size: 10px;
+      width: 200px; }
+    .img-cocteles h2 {
+      font-size: 12px;
+      width: 250px; } }
 
 /* DONDE ENCONTRARNOS */
 @media screen and (max-width: 1080px) {
