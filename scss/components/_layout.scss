@@ -135,10 +135,12 @@
         height: 100vh;
         background-repeat: no-repeat;
         display: flex;
+        overflow-x: hidden;
     }
     .img-cocteles{
         @include flex (flex,center);
         flex-direction: column;
+        overflow-x: hidden;
         h1{
             font-family: nth($font-family,1);
             color: $color-primario;
