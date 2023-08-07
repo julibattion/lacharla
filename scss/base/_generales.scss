@@ -42,12 +42,13 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: 65px;
-                height: 35px;
+                width: 60px;
+                height: 30px;
                 margin-top: 17px;
                 font-family: 'Montserrat', sans-serif;
                 color: white;
                 border-radius: 0;
+                transition: 1s;
                 &:hover{
                     background-color: rgb(137,83,19);
                     color: white;

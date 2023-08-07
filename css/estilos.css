@@ -1,3 +1,4 @@
+/* VARIABLES */
 /* LISTAS */
 /* EXTENDS */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap");
@@ -44,12 +45,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 65px;
-  height: 35px;
+  width: 60px;
+  height: 30px;
   margin-top: 17px;
   font-family: 'Montserrat', sans-serif;
   color: white;
-  border-radius: 0; }
+  border-radius: 0;
+  transition: 1s; }
   .button .btn:hover {
     background-color: #895313;
     color: white; }
@@ -208,14 +210,12 @@ header {
   background-image: url(../img/fondo.jpg);
   height: 100vh;
   background-repeat: no-repeat;
-  display: flex;
-  overflow-x: hidden; }
+  display: flex; }
 
 .img-cocteles {
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  overflow-x: hidden; }
+  flex-direction: column; }
   .img-cocteles h1 {
     font-family: "gobold_thinregular";
     color: #895313;
@@ -331,7 +331,10 @@ footer {
     height: 23px;
     width: 23px;
     margin-top: 8px;
-    margin-bottom: 5px; }
+    margin-bottom: 5px;
+    transition: 1s; }
+    footer div a img:hover {
+      transform: scale(1.1); }
   footer .copyright {
     margin-bottom: -4px;
     margin-top: 12px;
@@ -711,56 +714,45 @@ footer {
 /* RECETAS */
 @media screen and (max-width: 1280px) {
   .cocteles {
-    background-image: url(../img/fondo-2.jpg);
-    overflow-x: hidden; } }
+    background-image: url(../img/fondo-2.jpg); } }
 
 @media screen and (max-width: 1100px) {
   .cocteles {
-    background-image: url(../img/fondo-3.jpg);
-    overflow-x: hidden; } }
+    background-image: url(../img/fondo-3.jpg); } }
 
 @media screen and (max-width: 1024px) {
-  .img-cocteles {
-    overflow-x: hidden; }
-    .img-cocteles div img {
-      height: 400px;
-      width: 400px; }
-    .img-cocteles div ul h3 {
-      font-size: 18px; }
-    .img-cocteles div ul li {
-      font-size: 14px; } }
+  .img-cocteles div img {
+    height: 400px;
+    width: 400px; }
+  .img-cocteles div ul h3 {
+    font-size: 18px; }
+  .img-cocteles div ul li {
+    font-size: 14px; } }
 
 @media screen and (max-width: 980px) {
   .cocteles {
-    overflow-x: hidden;
     background-image: url(../img/fondo-4.jpg); } }
 
 @media screen and (max-width: 940px) {
-  .img-cocteles {
-    overflow-x: hidden; }
-    .img-cocteles h2 {
-      width: 500px;
-      align-self: center; } }
+  .img-cocteles h2 {
+    width: 500px;
+    align-self: center; } }
 
 @media screen and (max-width: 885px) {
   .cocteles {
-    overflow-x: hidden;
     background-image: url(../img/fondo-5.jpg); } }
 
 @media screen and (max-width: 860px) {
-  .img-cocteles {
-    overflow-x: hidden; }
-    .img-cocteles div img {
-      height: 350px;
-      width: 350px; }
-    .img-cocteles div ul h3 {
-      font-size: 16px; }
-    .img-cocteles div ul li {
-      font-size: 12px; } }
+  .img-cocteles div img {
+    height: 350px;
+    width: 350px; }
+  .img-cocteles div ul h3 {
+    font-size: 16px; }
+  .img-cocteles div ul li {
+    font-size: 12px; } }
 
 @media screen and (max-width: 790px) {
   .img-cocteles {
-    overflow-x: hidden;
     margin-top: -30px; }
     .img-cocteles div {
       flex-direction: column; }
@@ -787,52 +779,44 @@ footer {
 
 @media screen and (max-width: 550px) {
   .cocteles {
-    overflow-x: hidden;
     background-image: url(../img/fondo-6.jpg); }
-  .img-cocteles {
-    overflow-x: hidden; }
-    .img-cocteles div img {
-      height: 350px;
-      width: 350px; }
-    .img-cocteles h1 {
-      font-size: 20px; }
-    .img-cocteles h2 {
-      font-size: 14px;
-      width: 400px; } }
+  .img-cocteles div img {
+    height: 350px;
+    width: 350px; }
+  .img-cocteles h1 {
+    font-size: 20px; }
+  .img-cocteles h2 {
+    font-size: 14px;
+    width: 400px; } }
 
 @media screen and (max-width: 400px) {
   .cocteles {
-    overflow-x: hidden;
     background-image: url(../img/fondo-7.jpg); }
-  .img-cocteles {
-    overflow-x: hidden; }
-    .img-cocteles h1 {
-      font-size: 16px; }
-    .img-cocteles h2 {
-      font-size: 12px;
-      width: 300px; }
-    .img-cocteles div img {
-      height: 300px;
-      width: 300px; }
-    .img-cocteles div ul h3 {
-      font-size: 14px; }
-    .img-cocteles div ul li {
-      font-size: 11px; } }
+  .img-cocteles h1 {
+    font-size: 16px; }
+  .img-cocteles h2 {
+    font-size: 12px;
+    width: 300px; }
+  .img-cocteles div img {
+    height: 300px;
+    width: 300px; }
+  .img-cocteles div ul h3 {
+    font-size: 14px; }
+  .img-cocteles div ul li {
+    font-size: 11px; } }
 
 @media screen and (max-width: 350px) {
-  .img-cocteles {
-    overflow-x: hidden; }
-    .img-cocteles div img {
-      height: 240px;
-      width: 240px; }
-    .img-cocteles div ul h3 {
-      font-size: 13px; }
-    .img-cocteles div ul li {
-      font-size: 10px;
-      width: 200px; }
-    .img-cocteles h2 {
-      font-size: 12px;
-      width: 250px; } }
+  .img-cocteles div img {
+    height: 240px;
+    width: 240px; }
+  .img-cocteles div ul h3 {
+    font-size: 13px; }
+  .img-cocteles div ul li {
+    font-size: 10px;
+    width: 200px; }
+  .img-cocteles h2 {
+    font-size: 12px;
+    width: 250px; } }
 
 /* DONDE ENCONTRARNOS */
 @media screen and (max-width: 1080px) {
