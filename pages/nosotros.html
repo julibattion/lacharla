@@ -12,6 +12,7 @@
     <meta property="og:image" content="https://scontent.fros9-1.fna.fbcdn.net/v/t39.30808-6/352367364_1437564047008224_346951947770866301_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=730e14&_nc_ohc=Xy95jhUuR5cAX-yDAkm&_nc_ht=scontent.fros9-1.fna&oh=00_AfAPz5fjv_-7mStMRgXXKHHWfWdyumebzZfF2HMieMVzyQ&oe=64D696F1">
     <title>La charla</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/estilos.css"/>
     <link rel="icon" href="../img/lacharla.png">
     <link rel="stylesheet" href="../fonts/stylesheet.css">
@@ -58,19 +59,19 @@
 
         <section class="botanicos">
             
-            <div class="anis">
+            <div class="anis" data-aos="zoom-in" data-aos-offset="400" data-aos-duration="500">
                 <p>Se caracteriza por su intenso sabor anisado con notas dulces y especiadas que añaden complejidad al vermut. Le aporta también un toque de amargor suave que ayuda a equilibrar y resaltar los sabores.</p>
                 <img src="../img/anis.jpg" alt="anis">
             </div>
-            <div class="cardamomo">
+            <div class="cardamomo" data-aos="zoom-in" data-aos-offset="400" data-aos-duration="500">
                 <img src="../img/cardamomo.jpg" alt="cardamomo">
                 <p>Pertenece a la familia del jengibre y se obtiene de los frutos de la planta, pequeñas vainas de color verde que contienen semillas negras en su interior. Son estas semillas las que tienen un alto poder aromático y se usan una vez secas. Poseen un inconfundible aroma, un sabor intenso, sofisticado, dulzón y ligeramente afrutado con un punto ácido y picante.</p>
             </div>
-            <div class="jengibre">
+            <div class="jengibre" data-aos="zoom-in" data-aos-offset="400" data-aos-duration="500">
                 <p>Es una planta tropical y lo que aprovechamos de ella no es una raíz, sino un rizoma, o sea, un tallo subterráneo. Aporta una nota cálida y picante, emparentado con el del rábano o el wasabi. Mantiene tonos frescos y amargos, mas bien herbales, que recuerdan a la menta, al eucalipto y la madera. </p>
                 <img src="../img/jengibre.jpg" alt="jengibre">
             </div>
-            <div class="canela">
+            <div class="canela" data-aos="zoom-in" data-aos-offset="400" data-aos-duration="500">
                 <img src="../img/canela.jpg" alt="canela">
                 <p>Aunque principalmente asociamos la canela al sabor dulce, enseguida reconocemos que no es tan sencillo, por sus tonalidades terrosas y amargas que recuerdan tanto al chocolate como el café. Además tiene un punto ligeramente picante que añade profundidad al conjunto.</p>
             </div>
@@ -91,7 +92,7 @@
 
     <footer>
 
-        <h3>Contactanos</h3>
+        <h2>Contactanos</h2>
         
         <div> 
             <p>Rosario, Santa fe.</p>
@@ -111,5 +112,11 @@
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="../js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once:true
+        });
+    </script>
 </body>
 </html>

@@ -2,6 +2,20 @@
 
 /* HEADER */
 
+@media (max-width:1440px) and (min-width:700px){
+    header{
+        nav{
+            ul{
+                li{
+                    a{
+                        transition: 1s;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width:700px){
     header{
         position: absolute;
@@ -236,8 +250,8 @@
     .variedades{
         div{
             img{
-                height: 530px;
-                width: 530px;
+                height: 500px;
+                width: 500px;
             }
         }
 }
@@ -307,8 +321,8 @@
     .variedades{
         div{
             img{
-                height: 500px;
-                width: 500px;
+                height: 480px;
+                width: 480px;
             }
         }
     }
@@ -629,8 +643,8 @@
     .variedades{
         div{
             img{
-                width: 330px;
-                height: 330px;
+                width: 310px;
+                height: 310px;
             }
             .blanco{
                 margin-bottom: -150px;
@@ -798,7 +812,7 @@
             flex-direction: column-reverse;
         }
         .americano{
-            margin-bottom: -200px;
+            margin-bottom: -50px;
         }
     }
 }
@@ -1048,7 +1062,7 @@
 
 @media screen and (max-width:430px) {
     footer{
-        h3{
+        h2{
             font-size: 15px;
         }
     }

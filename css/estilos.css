@@ -201,9 +201,13 @@ header {
     display: flex;
     justify-content: space-around; }
     .variedades div img {
-      height: 600px;
-      width: 600px;
-      margin-top: 100px; }
+      height: 550px;
+      width: 550px;
+      margin-top: 100px;
+      transition-duration: 0.7s; }
+      .variedades div img:hover {
+        transform: scale(1.1);
+        transition-duration: 0.7s; }
 
 /* RECETAS */
 .cocteles {
@@ -215,7 +219,9 @@ header {
 .img-cocteles {
   display: flex;
   justify-content: center;
-  flex-direction: column; }
+  flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: hidden; }
   .img-cocteles h1 {
     font-family: "gobold_thinregular";
     color: #895313;
@@ -303,7 +309,7 @@ header {
   .contacto img {
     height: 20px;
     width: 20px; }
-  .contacto h3 {
+  .contacto h2 {
     font-family: "Montserrat";
     font-weight: 400;
     font-size: 15px;
@@ -315,7 +321,7 @@ footer {
   background-color: #895313;
   height: 240px;
   margin-top: 400px; }
-  footer h3 {
+  footer h2 {
     font-family: "gobold_thinregular";
     text-align: center;
     font-size: 18px;
@@ -344,6 +350,10 @@ footer {
 
 /*MEDIA QUERIES*/
 /* HEADER */
+@media (max-width: 1440px) and (min-width: 700px) {
+  header nav ul li a {
+    transition: 1s; } }
+
 @media screen and (max-width: 700px) {
   header {
     position: absolute;
@@ -485,8 +495,8 @@ footer {
 /* NOSOTROS */
 @media screen and (max-width: 1320px) {
   .variedades div img {
-    height: 530px;
-    width: 530px; } }
+    height: 500px;
+    width: 500px; } }
 
 @media screen and (max-width: 1280px) {
   .nosotros img {
@@ -519,8 +529,8 @@ footer {
   .elaboracion div p {
     width: 350px; }
   .variedades div img {
-    height: 500px;
-    width: 500px; } }
+    height: 480px;
+    width: 480px; } }
 
 @media screen and (max-width: 1090px) {
   .nosotros {
@@ -682,8 +692,8 @@ footer {
   .botanicos div p {
     width: 290px; }
   .variedades div img {
-    width: 330px;
-    height: 330px; }
+    width: 310px;
+    height: 310px; }
   .variedades div .blanco {
     margin-bottom: -150px; } }
 
@@ -775,7 +785,7 @@ footer {
     .img-cocteles .martini {
       flex-direction: column-reverse; }
     .img-cocteles .americano {
-      margin-bottom: -200px; } }
+      margin-bottom: -50px; } }
 
 @media screen and (max-width: 550px) {
   .cocteles {
@@ -902,5 +912,5 @@ footer {
 
 /* FOOTER */
 @media screen and (max-width: 430px) {
-  footer h3 {
+  footer h2 {
     font-size: 15px; } }
