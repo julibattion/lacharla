@@ -257,7 +257,9 @@ header {
 
 /* DONDE ENCONTRARNOS */
 .donde-encontrarnos {
-  background-color: #5f1e18; }
+  background-color: #5f1e18;
+  padding-bottom: 300px;
+  margin-bottom: -400px; }
   .donde-encontrarnos h1 {
     font-family: "gobold_thinregular";
     color: white;
